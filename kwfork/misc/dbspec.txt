@@ -1,0 +1,60 @@
+User table
+==========
+
+uid autonumber
+username text(64)
+password memo (SHA512)
+name text(128)
+admin boolean
+deactivated
+
+create table xestiascan_users (
+uid SERIAL PRIMARY KEY,
+username varchar(64) UNIQUE NOT NULL,
+salt varchar(512) NOT NULL,
+password text NOT NULL,
+name varchar(128) NOT NULL,
+admin boolean NOT NULL,
+enabled boolean NOT NULL
+);
+
+Access Scanner table
+====================
+
+uid (linked to user table)
+scannerid text(256)
+enabled boolean
+
+create table xestiascan_scanners (
+uid bigint NOT NULL,
+scannerid varchar(256) NOT NULL,
+enabled boolean NOT NULL
+);
+
+Access Module table
+===================
+
+uid (linked to user table)
+moduletype text(12)
+modulename text(256)
+enabled boolean
+
+create table xestiascan_modules(
+uid bigint NOT NULL,
+moduletype varchar(12) NOT NULL,
+modulename varchar(256) NOT NULL,
+enabled boolean NOT NULL
+);
+
+Sessions table
+==============
+
+seed text(32) unique primary key not null,
+username memo NOT NULL,
+expires datetime NOT NULL
+
+create table xestiascan_sessions(
+seed varchar(32) UNIQUE PRIMARY KEY NOT NULL,
+username text NOT NULL,
+expires timestamp NOT NULL
+);

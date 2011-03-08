@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Xestia Scanner Server<xestiascan:title></title>
+		<style type="text/css" media="screen">
+			body {
+				margin: 0px; 
+				font-family: sans-serif; 
+				padding: 0px; 
+				font-size: 13px;
+				background-color: #402040;
+				color: #ffffff;
+				background-image: url('<xestiascan:imagespath>/pagebackground.png');
+				background-repeat: repeat-x;
+			}
+			
+			a:link {
+				color: #ffffff;
+			}
+				
+			a:hover {
+				color: #bbbbbb;
+			}
+				
+			a:visited {
+				color: #ffffff;
+			}
+			
+			table {
+				width: 100%;
+			}
+			
+			tr {
+				padding: 5px;
+			}
+			
+			/*
+			
+			select, input, button {
+				font-size: 12px;
+				background-color: #408080;
+				color: #ffffff;
+				border-style: solid;
+				border-style: 1px;
+				border-color: #102020;
+				padding: 2px;
+			}
+			
+			*/
+			
+			textarea {
+				font-size: 12px;
+				background-color: #408080;
+				color: #ffffff;
+				border-style: solid;
+				border-style: 1px;
+				border-color: #102020;
+				padding: 2px;
+				white-space: nowrap;
+			}
+			
+			.page {
+			}
+			
+			.pagedata {
+				padding: 0px;
+			}
+			
+			.topbar {
+				padding: 3px;
+				background-color: #753575;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-bottom-color: #EE70EE;
+				text-align: right;
+				min-height: 17px;
+				background-image: url('<xestiascan:imagespath>/menutop.png');
+				background-repeat: repeat-x;
+			}
+			
+			.title {
+				font-size: 16px;
+				font-weight: bold;
+				position: absolute;
+				text-align: left;
+				z-index: 0;
+				left: 0;
+				padding-left: 3px;
+			}
+			
+			.tablecellheader {
+				font-size: 12px;
+				background-color: #703570;	
+				font-weight: bold;
+				text-align: left;
+				background-image: url('<xestiascan:imagespath>/tabletop.png');
+				background-repeat: repeat-x;
+			}
+			
+			.tablecell1 {
+				background-color: #603060;
+				font-size: 12px;
+			}
+			
+			.tablecell2 {
+				background-color: #402040;
+				font-size: 12px;
+			}
+			
+			.tablecelldisabled {
+				background-color: #808080;
+				font-size: 12px;
+			}
+
+			.copyrightbar {
+				background-color: #30AAAA;
+				padding: 7px;
+				border-top: solid;
+				border-top-color: #70bbbb;
+				border-top-width: 1px;
+			}
+			
+			.errorsectionbox {
+				border-color: #A00000;
+				border-style: solid;
+				border-width: 1px;
+				margin: 5px;
+			}
+			
+			.errorboxheader {
+				background-color: #700000;
+				font-size: 16px;
+				padding: 5px;
+				text-align: center;
+			}
+			
+			.errorbox {
+				padding: 5px;
+				background-color: #350000;
+			}
+			
+			.copyrighttext {
+				font-size:12px;
+			}
+			
+			.datalist {
+				border: solid;
+				border-width: 1px;
+				border-color: #CC60CC;
+				padding: 5px;
+				background-color: #703570;
+			}
+
+			.warningcell {
+				background-color: #902020;
+				font-size: 12px;
+			}
+
+			.warningoption {
+				background-color: #902020;
+			}
+
+			.pageheader {
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			.smallpageheader{
+				font-weight: bold;
+			}
+			
+			.scannermenu{
+				text-align: center;
+				padding: 3px;
+				background-color: #603060;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-bottom-color: #CC60CC;
+				text-align: center;
+				background-image: url('<xestiascan:imagespath>/scannertop.png');
+				background-repeat: repeat-x;
+			}
+			
+			.sectionbox {
+				float: left;
+				width: inherit;
+				border-color: #A050A0;
+				border-style: solid;
+				border-width: 1px;
+				padding: 0px;
+				margin: 5px;
+			}
+			
+			.sectiontitle{
+				background-color: #753575;
+				font-size: 16px;
+				padding: 5px;
+				text-align: center;
+				background-image: url('<xestiascan:imagespath>/sectiontop.png');
+				background-repeat: repeat-x;
+				border-bottom-color: #904590;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+			}
+			
+			.sectionboxnofloat {
+				border-color: #A050A0;
+				border-style: solid;
+				border-width: 1px;
+				padding: 0px;
+				margin: 5px;
+			}
+			
+			.secondbox{
+				padding: 5px;
+				background-color: #502550;
+			}
+			
+			.previewimage{
+				text-align: center;
+			}
+			
+			.outputmoduletitle, .exportmoduletitle{
+				padding: 5px;
+				background-color: #603060;
+				font-weight: bold;
+			}
+			
+			.outputmoduleoptions, .exportmoduleoptions{
+				padding-left: 15px;
+				padding-top: 5px;
+				padding-right: 5px;
+				padding-bottom: 5px;
+				background-color: #502550;
+			}
+			
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8;">
+	</head>
+	<body>
+		<div class="topbar">
+				<span class="title">Xestia Scanner Server</span>
+				<xestiascan:menu>
+		</div>
+		<div class="page">
+
+			<div class="pagedata">
+				<xestiascan:pagedata>
+			</div>
+			
+		</div>
+		<!--<div class="copyrightbar">
+			&copy;2010 Steve Brokenshire<br />
+		</div>-->
+	</body>
+</html> 

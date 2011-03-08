@@ -7,17 +7,17 @@
 # This module is licensed under the same license as Xestia Scanner Server which #
 # is the GPL version 3.								#
 #										#
-# This program is free software; you can redistribute it and/or modify it under #
-# the terms of the GNU General Public License as published by the Free		#
-# Software Foundation; as version 2 of the License.				#
+# This program is free software: you can redistribute it and/or modify		#
+# it under the terms of the GNU General Public License as published by		#
+# the Free Software Foundation, version 3 of the License.			#
 #										#
-# This program is distributed in the hope that it will be useful, but WITHOUT 	#
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS	#
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.#
+# This program is distributed in the hope that it will be useful,		#
+# but WITHOUT ANY WARRANTY; without even the implied warranty of		#
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			#
+# GNU General Public License for more details.					#
 #										#
-# You should have received a copy of the GNU General Public License along with	#
-# this program; if not, write to the Free Software Foundation, Inc., 51 	#
-# Franklin St, Fifth Floor, Boston, MA 02110-1301 USA				#
+# You should have received a copy of the GNU General Public License		#
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.		#
 ################################################################################# 
 
 # Define the package (perl module) name.
@@ -38,7 +38,7 @@ use DBI qw(:sql_types);
 
 # Set the following values.
 
-our $VERSION 	= "0.6.0";
+our $VERSION 	= "0.1.0";
 my ($options, %options);
 my $database_handle;
 my $statement_handle;

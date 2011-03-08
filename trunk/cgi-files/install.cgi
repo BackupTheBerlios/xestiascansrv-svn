@@ -6,8 +6,10 @@
 #										#
 # Version: 0.1.0								#
 #										#
-# This installer is licensed under the same license as Xestia Scanner Server	#
-# which is licensed under the GPL version 3.					#
+# Copyright (C) 2005-2011 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
+#										#
+# This module is licensed under the same license as Xestia Scanner Server which #
+# is licensed under the GPL version 3.						#
 #										#
 # This program is free software: you can redistribute it and/or modify		#
 # it under the terms of the GNU General Public License as published by		#

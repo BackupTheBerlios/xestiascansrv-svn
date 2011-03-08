@@ -6,7 +6,7 @@
 #										#
 # Version: 0.1.0								#
 #										#
-# Copyright (C) 2005-2010 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
+# Copyright (C) 2005-2011 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
 #										#
 # This code has been forked from Kiriwrite <http://xestia.co.uk/kiriwrite>.	#
 # Save development time, recycle your code where possible!			#

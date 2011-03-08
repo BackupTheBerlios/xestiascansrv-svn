@@ -35,7 +35,7 @@ use Image::Magick;
 
 # Set the following values.
 
-our $VERSION = "0.5.0";
+our $VERSION = "0.1.0";
 my ($pages, %pages);
 my $error_flag = 0;
 my $error_message = "";

@@ -2,6 +2,8 @@
 # Xestia Scanner Server - Settings System Module				#
 # Version 0.1.0									#
 #										#
+# Copyright (C) 2010-2011 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
+#										#
 # This module is licensed under the same license as Xestia Scanner Server which #
 # is licensed under the GPL version 3.						#
 #										#

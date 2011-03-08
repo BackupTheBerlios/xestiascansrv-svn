@@ -2,22 +2,22 @@
 # Xestia Scanner Server Presentation Module - HTML 4.0 Strict (HTML4S.pm)	#
 # Output Module for writing pages to the HTML 4.0 Strict Standard		#
 #										#
-# Copyright (C) 2007 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
+# Copyright (C) 2007-2011 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
 #										#
-# This module is licensed under the same license as Xestia Scanner Server	#
-# which is the GPL version 3.							#
+# This module is licensed under the same license as Xestia Scanner Server which #
+# is licensed under the GPL version 3.						#
 #										#
-# This program is free software; you can redistribute it and/or modify it under #
-# the terms of the GNU General Public License as published by the Free		#
-# Software Foundation; as version 2 of the License.				#
+# This program is free software: you can redistribute it and/or modify		#
+# it under the terms of the GNU General Public License as published by		#
+# the Free Software Foundation, version 3 of the License.			#
 #										#
-# This program is distributed in the hope that it will be useful, but WITHOUT 	#
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS	#
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.#
+# This program is distributed in the hope that it will be useful,		#
+# but WITHOUT ANY WARRANTY; without even the implied warranty of		#
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			#
+# GNU General Public License for more details.					#
 #										#
-# You should have received a copy of the GNU General Public License along with	#
-# this program; if not, write to the Free Software Foundation, Inc., 51 	#
-# Franklin St, Fifth Floor, Boston, MA 02110-1301 USA				#
+# You should have received a copy of the GNU General Public License		#
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.		#
 #################################################################################
 
 # Define the package (perl module) name.
@@ -31,7 +31,7 @@ use warnings;
 
 # Set the following values.
 
-our $VERSION = "0.5.0";
+our $VERSION = "0.1.0";
 my $pagedata = "";
 my $tablevel = 0;
 

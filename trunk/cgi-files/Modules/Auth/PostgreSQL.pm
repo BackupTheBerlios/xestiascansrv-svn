@@ -90,11 +90,11 @@ sub capabilities{
 
 sub loadsettings{
 #################################################################################
-# loadsettings: Loads settings into the MySQL5 database module			#
+# loadsettings: Loads settings into the PostgreSQL authentication module	#
 #										#
 # Usage:									#
 #										#
-# $dbmodule->loadsettings(Directory, options);					#
+# $dbmodule->loadsettings(options);						#
 #										#
 # options	Specifies the following options (in any order).			#
 #										#
@@ -468,77 +468,6 @@ sub geterror{
 	}
 
 }
-
-sub dbpermissions{
-#################################################################################
-# dbpermissions: Check if the permissions for the database are valid.		#
-#										#
-# Usage:									#
-#										#
-# $database->dbpermissions(dbname, read, write);				#
-#										#
-# dbname	Specifies the database name to check.				#
-# read		Check to see if the database can be read.			#
-# write		Check to see if the database can be written.			#
-#################################################################################
-
-	# This subroutine is not needed for this database module.
-
-	return 0;
-
-}
-
-sub dbexists{
-#################################################################################
-# dbexists: Check if the database exists.					#
-#										#
-# Usage:									#
-#										#
-# $dbmodule->dbexists(dbname);							#
-#										#
-# dbname	Specifies the database name to check.				#
-#################################################################################
-
-	$error = "";
-	$errorext = "";
-
-	# Get the value that was passed to the subroutine.
-
-	my $class	= shift;
-	my ($filename)  = @_;
-
-	my @table_data;
-	my $table_exists = 0;
-
-	# Check if the table exists.
-
-	$statement_handle = $database_handle->prepare('SHOW TABLES LIKE \'' . $class->convert($options{"TablePrefix"}) . '_' . $class->convert($filename) . '_database_info\'') or ( $error = "DatabaseError", $errorext = $database_handle->errstr, return );
-	$statement_handle->execute();
-
-	while (@table_data = $statement_handle->fetchrow_array()){
-
-		$table_exists = 1;
-
-	}
-
-	# Check if the table really does exist.
-
-	if ($table_exists eq 1){
-
-		# The table exists so return a value of 0.
-
-		return 0;
-
-	} else {
-
-		# The table does not exist so return a value of 1.
-
-		return 1;
-
-	}
-
-}
-
 
 #################################################################################
 # General subroutines.								#

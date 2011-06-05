@@ -2,6 +2,8 @@
 # Xestia Scanner Server - Common System Module					#
 # Version 0.1.0									#
 #										#
+# Copyright (C) 2010-2011 Steve Brokenshire <sbrokenshire@xestia.co.uk>		#
+#										#
 # This module is licensed under the same license as Xestia Scanner Server which #
 # is licensed under the GPL version 3.						#
 #										#
@@ -1412,50 +1414,6 @@ sub xestiascan_variablecheck{
 
 		return 0;
 
-	} elsif ($variable_type eq "pagesetting"){
-
-		# The variable type is a page setting, so check if the page
-		# setting has one of the valid options.
-
-		if ($variable_data eq 0 || $variable_data eq 1 || $variable_data eq 2 || $variable_data eq 3){
-
-			# The variable is one of the options above, so continue
-			# to the end of this section.
-
-		} else {
-
-			# The variable is not one of the options above, so check
-			# and see if a error or a value should be returned.
-
-			if ($variable_noerror eq 1){
-
-				# The page setting is invalid and the no error
-				# value is set 1, so return a value of 1
-				# (saying that the page setting value is
-				# invalid).
-
-				return 1;
-
-			} elsif ($variable_noerror eq 0) {
-
-				# Page setting is invalid and the no error value
-				# is not 1, so return an error.
-
-				xestiascan_error("invalidvariable");
-
-			} else {
-
-				# The no error value is something else other
-				# than 0 or 1 so return an error.
-
-				xestiascan_error("invalidvariable");
-
-			}
-
-		}
-
-		return 0;
-
 	} elsif ($variable_type eq "module"){
 
 		# The variable type is a presentation module filename.
@@ -1936,15 +1894,14 @@ sub xestiascan_output_page{
 #										#
 # Usage:									#
 # 										#
-# xestiascan_output_page(pagetitle, pagedata, menutype, dbfilename);		#
+# xestiascan_output_page(pagetitle, pagedata, menutype);			#
 # 										#
 # pagetitle	Specifies the page title.					#
 # pagedata	Specifies the page data.					#
 # menutype	Prints out which menu to use.					#
-# dbfilename	Specifies the database filename to use.				#
 #################################################################################
 
-	my ($pagetitle, $pagedata, $menutype, $db_filename) = @_;
+	my ($pagetitle, $pagedata, $menutype) = @_;
 
 	# Open the script page template and load it into the scriptpage variable,
 	# while declaring the variable.

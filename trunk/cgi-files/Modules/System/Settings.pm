@@ -93,7 +93,7 @@ sub xestiascan_settings_getlanguages{
 #										#
 # Usage:									#
 #										#
-# @presmodules = xestiascan_settings_getlanguages;				#
+# @languages = xestiascan_settings_getlanguages;				#
 #################################################################################
 	
 	my (@langmoduleslist, @langmoduleslist_final);
@@ -320,8 +320,9 @@ sub xestiascan_settings_edit{
 #										#
 # options		Specifies the following options in any order.		#
 #										#
-# DatabaseDirectory	Specifies the new database directory to use.		#
-# OutputDirectory	Specifies the new output directory to use.		#
+# ScansURIPath		Specifies the new URI path for scanned images.		#
+# ScansFSPath		Specifies the new filesystem path for scanned images.	#
+# DateTimeFormat	Specifies the new date and time format to use.		#
 # ImagesURIPath		Specifies the new URI path for images.			#
 # DateTimeFormat	Specifies the new date and time format.			#
 # SystemLanguage	Specifies the new language to use for Xestia Scanner	#
@@ -333,7 +334,7 @@ sub xestiascan_settings_edit{
 # OutputModule		Specifies the new output module to use for Xestia	#
 #			Scanner Server.						#
 #										#
-# Options for server-based database modules.					#
+# Options for server-based authentication modules.				#
 #										#
 # DatabaseServer	Specifies the database server to use.			#
 # DaravasePort		Specifies the port the database server is running on.	#

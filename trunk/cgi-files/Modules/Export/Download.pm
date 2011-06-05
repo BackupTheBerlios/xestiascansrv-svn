@@ -116,8 +116,6 @@ sub exportimage{
 #										#
 # Usage:									#
 #										#
-# $exportmodule->exportimage(processedfilename, exportoptions);			#
-#										#
 # $exportmodule->exportimage(processedfilename, scansuridirectory,		#
 #				scansfsdirectory, exportoptions);		#
 #										#

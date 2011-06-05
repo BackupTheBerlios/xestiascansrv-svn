@@ -188,9 +188,15 @@ sub xestiascan_users_add{
 #										#
 # Usage:									#
 #										#
-# xestiascan_users_add(username, name, password, deactivated,			#
-#					confirm, permissions);			#
+# xestiascan_users_add(username, userinfo, scannerinfo, outputmoduleinfo,	#
+#			exportmoduleinfo, confirm);				#
 #										#
+# username		Specifies the username to add to the user list.		#
+# userinfo		Specifies the userinfo as a hashref.			#
+# scannerinfo		Specifies the scanner permissions as a hashref.		#
+# outputmoduleinfo	Specifies the output module permissions as a hashref.	#
+# exportmoduleinfo	Specifies the export module permissions as a hashref.	#
+# confirm		Confirms the action to add a user to the user list.	#
 #################################################################################
 
 	my $username	= shift;
@@ -770,7 +776,7 @@ sub xestiascan_users_edit{
 # Usage:									#
 #										#
 # xestiascan_users_edit(username, userinfo, scannerinfo, outputmoduleinfo,	#
-#			exportmodule, confirm);					#
+#			exportmoduleinfo, confirm);				#
 #										#
 # username		Specifies the username to edit.				#
 # userinfo		Specifies the user information as a hash.		#

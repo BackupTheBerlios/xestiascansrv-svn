@@ -63,7 +63,7 @@ use Modules::System::Common;
 	"revision" 	=> 0
 );
 
-xestiascan_initalise;		# Initalise the Xestia Scanner Server enviroment.
+xestiascan_initialise;		# Initialise the Xestia Scanner Server enviroment.
 xestiascan_settings_load;	# Load the configuration options.
 
 my $query_lite = new CGI::Lite;
@@ -358,7 +358,7 @@ if ($form_data->{'mode'}){
 				
 				if (!$http_query_confirm){
 					
-					# The http_query_confirm variable is uninitalised, so place a
+					# The http_query_confirm variable is uninitialised, so place a
 					# '0' (meaning an unconfirmed action).
 					
 					$http_query_confirm = 0;
@@ -415,7 +415,7 @@ if ($form_data->{'mode'}){
 
 				if (!$http_query_confirm){
 					
-					# The http_query_confirm variable is uninitalised, so place a
+					# The http_query_confirm variable is uninitialised, so place a
 					# '0' (meaning an unconfirmed action).
 					
 					$http_query_confirm = 0;
@@ -478,7 +478,7 @@ if ($form_data->{'mode'}){
 				
 				if (!$http_query_confirm){
 					
-					# The http_query_confirm variable is uninitalised, so place a
+					# The http_query_confirm variable is uninitialised, so place a
 					# '0' (meaning an unconfirmed action).
 					
 					$http_query_confirm = 0;

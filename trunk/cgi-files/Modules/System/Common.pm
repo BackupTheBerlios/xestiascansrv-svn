@@ -29,11 +29,11 @@ use CGI::Lite;
 use MIME::Base64 qw(encode_base64url);
 
 our @ISA = qw(Exporter);
-our @EXPORT = qw(xestiascan_initalise xestiascan_settings_load xestiascan_fileexists xestiascan_filepermissions xestiascan_output_header xestiascan_output_page xestiascan_variablecheck xestiascan_processconfig xestiascan_processfilename xestiascan_utf8convert xestiascan_language xestiascan_error);
+our @EXPORT = qw(xestiascan_initialise xestiascan_settings_load xestiascan_fileexists xestiascan_filepermissions xestiascan_output_header xestiascan_output_page xestiascan_variablecheck xestiascan_processconfig xestiascan_processfilename xestiascan_utf8convert xestiascan_language xestiascan_error);
 
-sub xestiascan_initalise{
+sub xestiascan_initialise{
 #################################################################################
-# xestiascan_initalise: Get the enviroment stuff.				#
+# xestiascan_initialise: Get the enviroment stuff.				#
 #################################################################################
 
 	# Get the script filename.

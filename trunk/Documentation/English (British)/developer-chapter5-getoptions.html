@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 5.5 getoptions</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">5.5 getoptions</span>
+<br><br>
+Gets the options available for the export module.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_exportmodule->getoptions();
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+%options = $xestiascan_exportmodule->getoptions();
+</div>
+<br><br>
+Places the following settings as a hash. Each setting has the following values with the short name for the value.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">type</td>
+  <td class="tabledata">Specifies the type of setting. Either checkbox, textbox, combobox or radio.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">string</td>
+  <td class="tabledata">Specifies the description of the setting.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">checked</td>
+  <td class="tabledata">Specifies if the option is checked for a checkbox type setting.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">size</td>
+  <td class="tabledata">Specifies the size of the textbox.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">maxlength</td>
+  <td class="tabledata">Specifies the maximum length of the textbox.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">value</td>
+  <td class="tabledata">Specifies the default value of the textbox or the values of the combo box. Each value for the combobox should be seperated with a pipe (‘|’) symbol.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">password</td>
+  <td class="tabledata">Specifies if the textbox is a password field.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">selected</td>
+  <td class="tabledata">Specifies if the radio option is selected.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

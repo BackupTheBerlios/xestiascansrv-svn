@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 4.9 processimage</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">4.9 processimage</span>
+<br><br>
+Processes the image. This subroutine returns the filename of the processed image.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_outputmodule->processimage(hexnumber, outputmoduleoptions);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_outputmodule->processimage(“31F”, { Option => 2 });
+</div>
+<br><br>
+<i>hexnumber</i><br>
+Specifies the hexadecimal number of the filename to process the image.
+<br><br>
+<i>outputmoduleoptions</i><br>
+Specifies the output module settings as a hash which were selected on the settings screen.
+		</div>
+	</body>
+</html>

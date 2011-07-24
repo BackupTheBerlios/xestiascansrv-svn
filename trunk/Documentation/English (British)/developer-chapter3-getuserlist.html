@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.10 getuserlist</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">3.10 getuserlist</span>
+<br><br>
+Gets the user list. Returns as a hash.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->getuserlist();
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+%userlist = $xestiascan_authmodule->getuserlist(options);
+</div>
+<br><br>
+<i>options</i><br>
+Specifies the following options as a hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Reduced</td>
+  <td class="tabledata">Gets a reduced version of the user list.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ShowDeactivated</td>
+  <td class="tabledata">Show users that are deactivated from the list.</td>
+ </tr>
+</table>
+<br><br>
+The hash returns the following data for each user.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">username</td>
+  <td class="tabledata">Specifies the username of the user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">name</td>
+  <td class="tabledata">Specifies the name of the user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">deactivated</td>
+  <td class="tabledata">Specifies if the user account is enabled or disabled.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

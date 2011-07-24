@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.26 xestiascan_users_edit</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.26 xestiascan_users_edit</span>
+<br><br>
+xestiascan_users_add edits a user from the user list or prints out a form for adding a user if the action to edit a user has not been confirmed.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_users_edit(username, userinfo, scannerinfo, outputmoduleinfo, exportmoduleinfo, confirm);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$pagedata = xestiascan_users_add();
+$pagedata = xestiascan_users_add(“New User”, \%userinfo, \%scannerinfo, \%outputmoduleinfo, \%exportmoduleinfo, 1);
+</div>
+<br><br>
+<i>username</i><br>
+Specifies the username to edit from the user list. This is required in all cases.
+<br><br>
+<i>userinfo</i><br>
+Specifies the user information as a hashref.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Value</td>
+ </tr>
+ <tr>
+  <td class="tabledata">OriginalUsername</td>
+  <td class="tabledata">Specifies the original username.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">NewUsername</td>
+  <td class="tabledata">Specifies the new username.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Name</td>
+  <td class="tabledata">Specifies the name of the user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Password</td>
+  <td class="tabledata">Specifies the password of the user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ConfirmPassword</td>
+  <td class="tabledata">Specifies the confirmed password (should be same as Password).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Admin</td>
+  <td class="tabledata">Specifies if the user has administrative privledges.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Enabled</td>
+  <td class="tabledata">Specifies if the account is enabled.</td>
+ </tr>
+</table>
+<br><br>
+<i>scannerinfo</i><br>
+Specifies the scanner permissions as a hashref. Each permission is named scanner_(ScannerID) and specifies if the user has permission to use this scanner (A value of ‘on’ would allow the user to use that scanner).
+<br><br>
+<i>outputmoduleinfo</i><br>
+Specifies the output module permissions as a hashref. Each permission is named outputmodule_(OutputModuleName) and specifies if the user has permission to use this output module (A value of 'on' would allow the user to use that module).
+<br><br>
+<i>exportmoduleinfo</i><br>
+Specifies the export module permissions as a hashref. Each permission is named exportmodule_(ExportModuleName) and specifies if the user has permission to use this export module (A value of 'on' would allow the user to use that module).
+<br><br>
+<i>confirm</i><br>
+Confirms the action to add the user.
+		</div>
+	</body>
+</html>

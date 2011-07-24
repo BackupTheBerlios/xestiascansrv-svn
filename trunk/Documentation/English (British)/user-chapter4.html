@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - User Documentation - Chapter 4: Troubleshooting</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">Chapter 4: Troubleshooting</span>
+<br><br>
+<b>4.1 Common Problems</b>
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Problem</td>
+  <td class="tableheading">Symptom</td>
+  <td class="tableheading">Solution</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When installing, some of the needed Perl modules have the word ‘Error’ next to them.</td>
+  <td class="tabledata">The needed Perl modules are more than likely not installed.</td>
+  <td class="tabledata">Install the needed Perl modules from the CPAN<sup>1</sup> archive using the CPAN command interface.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When installing, an error message appears saying that none of the needed Perl modules for the authentication modules are installed.</td>
+  <td class="tabledata">The needed Perl module(s) (or the Perl module needed specifically for that certain authentication module) are more than likely not installed.</td>
+  <td class="tabledata">Install the needed Perl modules from the CPAN archive using the CPAN command interface.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When installing, an error message appears saying that some of the directories and files have invalid permissions set.</td>
+  <td class="tabledata">The directories and/or files have invalid permissions set.</td>
+  <td class="tabledata">Change the permissions on the directories and/or files so that are the correct permissions needed.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When installing, no authentication or presentation modules appear in the list of available authentication or presentation modules.</td>
+  <td class="tabledata">The modules weren't copied or were copied to the wrong directories.</td>
+  <td class="tabledata">Copy or move the authentication modules to the correct directory.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When installing, no languages appears in the languages selection list.</td>
+  <td class="tabledata">The language files weren't copied or were copied to the wrong location.</td>
+  <td class="tabledata">Copy or move the language files to the correct directory.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the configuration file does not exist.</td>
+  <td class="tabledata">The configuration file has been deleted or the installation script wasn't run.</td>
+  <td class="tabledata">Run the installer script (again).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the configuration file has invalid permissions set.</td>
+  <td class="tabledata">The configuration file has invalid permissions set.</td>
+  <td class="tabledata">Change the permissions on the configuration file so that it can be read.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the authentication module does not exist.</td>
+  <td class="tabledata">The authentication module has been deleted or renamed.</td>
+  <td class="tabledata">Run the installer script (again).<br>Check if the Modules and Modules/Auth directory have the correct permissions set so that they can be read.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the authentication module has invalid permissions set.</td>
+  <td class="tabledata">The authentication module has invalid permissions set.</td>
+  <td class="tabledata">Change the permissions on the authentication module so that they can be read (execute permissions not usually needed).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the presentation module does not exist.</td>
+  <td class="tabledata">The presentation module has been deleted or renamed.</td>
+  <td class="tabledata">Run the installer script (again).<br>Check if the Modules and Modules/Presentation directory have the correct permissions set so that they can be read.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the presentation module has invalid permissions set.</td>
+  <td class="tabledata">The presentation module has invalid permissions set.</td>
+  <td class="tabledata">Change the permissions on the presentation module so that they can be read (execute permissions not usually needed).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the language file does not exist.</td>
+  <td class="tabledata">The language file does not exist.</td>
+  <td class="tabledata">Run the installer script (again).<br>Check if the lang directory has the correct permissions set so that they can be read.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When starting Xestia Scanner Server, a critical error message appears saying that the language file has invalid permissions set.</td>
+  <td class="tabledata">The language file has invalid permissions set.</td>
+  <td class="tabledata">Change the permissions on the language file so that they can be read.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When trying to scan, the scanner does not appear in the scanner list.</td>
+  <td class="tabledata">Either the scanner is:<br>
+    Unplugged.<br>
+    Not turned on.<br>
+    Permissions not set correctly.<br>
+    Not supported by the SANE subsystem.</td>
+  <td class="tabledata">Plug the scanner in.<br>
+    Turn the scanner on.<br>
+    Permissions should have been set correctly automatically upon plugging in and may be a bug with the operating system.<br>
+    Check the scanner manufactuer’s website to see if they support the scanner through SANE.
+    </td>
+ </tr>
+ <tr>
+  <td class="tabledata">When trying to scan, it is not possible due to invalid permissions set on the user account.</td>
+  <td class="tabledata">The administrator operating the Xestia Scanner Server installation has set your account to not use this scanner.</td>
+  <td class="tabledata">Speak to the administrator operating the Xestia Scanner Server installation.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When trying to scan, it is not possible due to an error message caused by the scanner.</td>
+  <td class="tabledata">The scanner may be malfunctioning.</td>
+  <td class="tabledata">Read the manual that came with the scanner and follow the troubleshooting procedure (if any) or contact the manufactuer of the scanner.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When trying to output an image, an error occurs.</td>
+  <td class="tabledata">The output module was configured incorrectly.</td>
+  <td class="tabledata">Either check the settings used for the output module or see the administrator operating the Xestia Scanner Server Installation as the administrator may need to set file permissions or configure the system.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">When trying to export an image, an error occurs.</td>
+  <td class="tabledata">The export module was configured incorrectly.</td>
+  <td class="tabledata">Either check the settings used for the export module or see the administrator operating the Xestia Scanner Server Installation as the administrator may need to set file permissions or configure the system.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">An error message appears when trying to login despite entering the correct username and password.</td>
+  <td class="tabledata">The user account has been disabled or the password has been changed by the administrator.</td>
+  <td class="tabledata">Check with the administrator operating the Xestia Scanner Server installation.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">I get logged out whilst using the Xestia Scanner Server.</td>
+  <td class="tabledata">Your session has expired or the administrator has used the ‘Logout All Users’ feature.</td>
+  <td class="tabledata">Login again.</td>
+ </tr>
+</table>
+
+<div class="footnote">
+<sup>1</sup> The CPAN (Comprehensive Perl Archive Network) command interface is normally included with Perl installations and will normally require superuser (root) permissions.
+</div>
+		</div>
+	</body>
+</html>

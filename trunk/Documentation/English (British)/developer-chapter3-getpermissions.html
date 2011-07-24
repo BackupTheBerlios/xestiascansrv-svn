@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.11 getpermissions</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">3.11 getpermissions</span>
+<br><br>
+Gets the permissions for specific scanner or module. Not specifying a permission name will get the complete list of permissions for that type as a hash. 
+<br><br>
+Specifying a permission name will return a string saying 1 (the user has permission for that) or 0 (the user does not have permission to do that).
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->getpermissions(options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->getpermissions({Username => “User”, PermissionType => “OutputModule”, PermissionName => “Test”});<br>
+%userinfo = $xestiascan_authmodule->getpermissions({ Username => “User”, PermissionType => “UserInfo”);
+</div>
+<br><br>
+<i>options</i><br>
+Specifies the following options as a hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Username</td>
+  <td class="tabledata">Specifies the username to get permissions for.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">PermissionType</td>
+  <td class="tabledata">Specifies the permission type.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">PermissionName</td>
+  <td class="tabledata">Get a specific permission name.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

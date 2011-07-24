@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.21 xestiascan_scan_getscannerlist</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.21 xestiascan_scan_getscannerlist</span>
+<br><br>
+xestiascan_scan_getscannerlist gets a list of available scanners and returns them as a hash.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_scan_getscannerlist();
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+%scannerlist = xestiascan_scan_getscannerlist();
+</div>
+<br><br>
+Each scanner has three values: 
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Value</td>
+ </tr>
+ <tr>
+  <td class="tabledata">name</td>
+  <td class="tabledata">The SANE ID of the scanner.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">model</td>
+  <td class="tabledata">The model of the scanner.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">vendor</td>
+  <td class="tabledata">The vendor of the scanner.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

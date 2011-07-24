@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.4 capabilities</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">3.4 capabilities</span>
+<br><br>
+Gets the capabilities of the authentication module (if it supports multiuser or not) and returns as a hash.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->capabilities();
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+%capabilities = $xestiascan_authmodule->capabilities();
+</div>
+<br><br>
+The following is returned within the hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">multiuser</td>
+  <td class="tabledata">Specifies if the authentication module is a multiuser module.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

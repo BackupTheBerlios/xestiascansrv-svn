@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.3 loadsettings</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="code">3.3 loadsettings</span>
+<br><br>
+Loads the current Xestia Scanner Server settings into the authentication module.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->loadsettings(options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->loadsettings(%options);
+</div>
+<br><br>
+<i>options </i><br>
+Specifies the settings to use as a hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DateTime</td>
+  <td class="tabledata">Specifies the date and time format to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Server</td>
+  <td class="tabledata">Specifies the server to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database</td>
+  <td class="tabledata">Specifies the database to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Username</td>
+  <td class="tabledata">Specifies the username to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Password</td>
+  <td class="tabledata">Specifies the password to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Port</td>
+  <td class="tabledata">Specifies the server port to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Protocol</td>
+  <td class="tabledata">Specifies the protocol to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">TablePrefix</td>
+  <td class="tabledata">Specifies the table prefix to use.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

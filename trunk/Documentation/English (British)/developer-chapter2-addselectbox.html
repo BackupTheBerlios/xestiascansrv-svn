@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 2.21 addselectbox</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">2.21 addselectbox</span>
+<br><br>
+The addselectbox subroutine adds a select box.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_presmodule->addselectbox(selectboxname, options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_presmodule->addselectbox("selectbox", { Style => "selectbox" });
+</div>
+<br><br>
+<i>options</i><br>
+Specifies the following options in any order.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Style</td>
+  <td class="tabledata">Specifies the CSS style to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ReadOnly</td>
+  <td class="tabledata">Specifies the select box is read only.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

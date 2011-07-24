@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 2.29 addbutton</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">2.29 addbutton</span>
+<br><br>
+The addbutton subroutine adds a button.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_presmodule->addbutton(buttonname, options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_presmodule->addbutton("button", { Value => "clicked", Description => "Click this button", Style => "buttonstyle" });
+</div>
+<br><br>
+<i>buttonname</i><br>
+Specifies the button name to use.
+<br><br>
+<i>options</i><br>
+Specifies the following options as a hash in any order.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Value</td>
+  <td class="tabledata">Specifies a value for the button when clicked on.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Description</td>
+  <td class="tabledata">Specifies a description (label) for the button.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Style</td>
+  <td class="tabledata">Specifies the CSS style to use.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

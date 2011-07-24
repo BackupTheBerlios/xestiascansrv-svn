@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 5.6 exportimage</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">5.6 exportimage</span>
+<br><br>
+Exports the image.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_exportmodule->exportimage(processedfilename, scansuridirectory, scansfsdirectory, exportoptions);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_exportmodule->exportimage(“filename”, “/images/scans”, “/var/scans”, %exportoptions);
+</div>
+<br><br>
+<i>processedfilename</i><br>
+Specified the name of the processed filename which has gone through an output module.
+<br><br>
+<i>scansuridirectory</i><br>
+Specifies the URI location of the scans directory.
+<br><br>
+<i>scansfsdirectory</i><br>
+Specifies the filesystem location of the scans directory.
+<br><br>
+<i>exportoptions</i><br>
+Specifies the export options which were specified in the getoptions subroutine when the form for specifying the export module settings was specified.
+		</div>
+	</body>
+</html>

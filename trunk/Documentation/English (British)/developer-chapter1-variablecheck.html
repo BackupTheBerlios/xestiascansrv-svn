@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.9 xestiascan_variablecheck</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.9 xestiascan_variablecheck</span>
+<br><br>
+xestiascan_variablecheck checks variables that are passed to it to see if the content of that variable is valid and returns an error if it isn’t. All the parameters are needed each time the subroutine is called and if the noerror parameters is set to 1 then a value is returned when an error occurs. Otherwise, a standard error will be given.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_variablecheck(variable, type, option, noerror);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+xestiascan_variablecheck(“Test 123”, “lettersnumbers”, “”, 0);<br>
+$letters_letnum_check = xestiascan_variablecheck(“Test 123”, “lettersnumbers”, “”, 1);
+</div>
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Value</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">numbers</td>
+  <td class="tabledata">Check if the variable given only contains characters.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">decimal</td>
+  <td class="tabledata">Check if the variable given is a valid decimal number.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">lettersnumbers</td>
+  <td class="tabledata">Check if the variable given only contains letters and numbers.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">maxlength</td>
+  <td class="tabledata">Check if the variable given does not exceed the specific length given.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">blank</td>
+  <td class="tabledata">Check if the variable given is blank.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">filename</td>
+  <td class="tabledata">Check if the variable given is a valid filename.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">filenameindir</td>
+  <td class="tabledata">Check if the variable given is a valid filename in a directory.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">datetime</td>
+  <td class="tabledata">Check if the variable given is a valid date and time format.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">directory</td>
+  <td class="tabledata">Check if the variable given is a valid directory name.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">language_filename</td>
+  <td class="tabledata">Check if the variable given is a valid language filename.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">module</td>
+  <td class="tabledata">Check if the variable given is a valid module name.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">utf8</td>
+  <td class="tabledata">Check if the variable given is a correctly formatted UTF8 string.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">serverprotocol</td>
+  <td class="tabledata">Checks to see if the variable given contains a valid server protocol (TCP or UDP).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">port</td>
+  <td class="tabledata">Check to see if the port number given is a valid port number (0-65535)</td>
+ </tr>
+</table>
+<br><br>
+<i>option</i><br>
+Specifies the setting to be used with the test.
+<br><br>
+<i>noerror</i><br>
+Specifies if no error message should be returned but a value should be returned instead so that a more specific error message can be used.
+<br><br>
+For more information on what values are returned, please look at the xestiascan_error subroutine in the Kiriwrite source code.
+		</div>
+	</body>
+</html>

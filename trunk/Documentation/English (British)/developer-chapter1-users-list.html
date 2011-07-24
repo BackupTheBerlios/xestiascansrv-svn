@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.24 xestiascan_users_list</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.24 xestiascan_users_list</span>
+<br><br>
+xestiascan_users_list prints a list of users. This will print a list of users only if the logged in user has administrative permissions.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_users_list(options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$pagedata = xestiascan_users_list({ HideDeactivatedUsers => 1 });
+</div>
+<br><br>
+<i>options</i><br>
+Specifies the following options as a hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Value</td>
+ </tr>
+ <tr>
+  <td class="tabledata">HideDeactivatedUsers</td>
+  <td class="tabledata">Hides deactivated users from the user list. The default setting is enabled (1). Setting the value to 0 will display the disabled users in the user list.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

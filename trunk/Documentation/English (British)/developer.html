@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">Developer Documentation</span>
+<br><br>
+The Developer Documentation contains information about the internal Xestia Scanner Server subroutines, presentation module, authentication module, export module, output modules, language support and page configuration.
+
+<br><br>
+<a href="developer-chapter1.html">Chapter 1: Internal Xestia Scanner Server Subroutines</a><br>
+&nbsp;<a href="developer-chapter1-initialise.html">1.1 xestiascan_initialise</a><br>
+&nbsp;<a href="developer-chapter1-settings-load.html">1.2 xestiascan_settings_load</a><br>
+&nbsp;<a href="developer-chapter1-language.html">1.3 xestiascan_language</a><br>
+&nbsp;<a href="developer-chapter1-error.html">1.4 xestiascan_error</a><br>
+&nbsp;<a href="developer-chapter1-critical.html">1.5 xestiascan_critical</a><br>
+&nbsp;<a href="developer-chapter1-fileexists.html">1.6 xestiascan_fileexists</a><br>
+&nbsp;<a href="developer-chapter1-filepermissions.html">1.7 xestiascan_filepermissions</a><br>
+&nbsp;<a href="developer-chapter1-utf8convert.html">1.8 xestiascan_utf8convert</a><br>
+&nbsp;<a href="developer-chapter1-variablecheck.html">1.9 xestiascan_variablecheck</a><br>
+&nbsp;<a href="developer-chapter1-output-header.html">1.10 xestiascan_output_header</a><br>
+&nbsp;<a href="developer-chapter1-processfilename.html">1.11 xestiascan_processfilename</a><br>
+&nbsp;<a href="developer-chapter1-processconfig.html">1.12 xestiascan_processconfig</a><br>
+&nbsp;<a href="developer-chapter1-output-page.html">1.13 xestiascan_output_page</a><br>
+&nbsp;<a href="developer-chapter1-auth-authenticate.html">1.14 xestiascan_auth_authenticate</a><br>
+&nbsp;<a href="developer-chapter1-auth-logout.html">1.15 xestiascan_auth_logout</a><br>
+&nbsp;<a href="developer-chapter1-scan-getoutputmodules.html">1.16 xestiascan_scan_getoutputmodules</a><br>
+&nbsp;<a href="developer-chapter1-scan-getexportmodules.html">1.17 xestiascan_scan_getexportmodules</a><br>
+&nbsp;<a href="developer-chapter1-scan-preview.html">1.18 xestiascan_scan_preview</a><br>
+&nbsp;<a href="developer-chapter1-scan-final.html">1.19 xestiascan_scan_final</a><br>
+&nbsp;<a href="developer-chapter1-scan-getpreviewimage.html">1.20 xestiascan_scan_getpreviewimage</a><br>
+&nbsp;<a href="developer-chapter1-scan-getscannerlist.html">1.21 xestiascan_scan_getscannerlist</a><br>
+&nbsp;<a href="developer-chapter1-scan-getscannervalue.html">1.22 xestiascan_scan_getscannervalue</a><br>
+&nbsp;<a href="developer-chapter1-scan-setscannervalue.html">1.23 xestiascan_scan_setscannervalue</a><br>
+&nbsp;<a href="developer-chapter1-users-list.html">1.24 xestiascan_users_list</a><br>
+&nbsp;<a href="developer-chapter1-users-add.html">1.25 xestiascan_users_add</a><br>
+&nbsp;<a href="developer-chapter1-users-edit.html">1.26 xestiascan_users_edit</a><br>
+&nbsp;<a href="developer-chapter1-users-delete.html">1.27 xestiascan_users_delete</a><br>
+&nbsp;<a href="developer-chapter1-users-flush.html">1.28 xestiascan_users_flush</a><br>
+&nbsp;<a href="developer-chapter1-settings-getauthmodules.html">1.29 xestiascan_settings_getauthmodules</a><br>
+&nbsp;<a href="developer-chapter1-settings-getpresmodules.html">1.30 xestiascan_settings_getpresmodules</a><br>
+&nbsp;<a href="developer-chapter1-settings-getlanguages.html">1.31 xestiascan_settings_getlanguages</a><br>
+&nbsp;<a href="developer-chapter1-settings-view.html">1.32 xestiascan_settings_view</a><br>
+&nbsp;<a href="developer-chapter1-settings-edit.html">1.33 xestiascan_settings_edit</a><br>
+&nbsp;<a href="developer-chapter1-output-config.html">1.34 xestiascan_output_config</a><br>
+<a href="developer-chapter2.html">Chapter 2: Presentation Module</a><br>
+&nbsp;<a href="developer-chapter2-guidance.html">2.1 Guidance</a><br>
+&nbsp;<a href="developer-chapter2-new.html">2.2 new</a><br>
+&nbsp;<a href="developer-chapter2-clear.html">2.3 clear</a><br>
+&nbsp;<a href="developer-chapter2-grab.html">2.4 grab</a><br>
+&nbsp;<a href="developer-chapter2-convert.html">2.5 convert</a><br>
+&nbsp;<a href="developer-chapter2-starttable.html">2.6 starttable</a><br>
+&nbsp;<a href="developer-chapter2-startheader.html">2.7 startheader</a><br>
+&nbsp;<a href="developer-chapter2-addheader.html">2.8 addheader</a><br>
+&nbsp;<a href="developer-chapter2-endheader.html">2.9 endheader</a><br>
+&nbsp;<a href="developer-chapter2-startrow.html">2.10 startrow</a><br>
+&nbsp;<a href="developer-chapter2-addcell.html">2.11 addcell</a><br>
+&nbsp;<a href="developer-chapter2-endcell.html">2.12 endcell</a><br>
+&nbsp;<a href="developer-chapter2-endrow.html">2.13 endrow</a><br>
+&nbsp;<a href="developer-chapter2-endtable.html">2.14 endtable</a><br>
+&nbsp;<a href="developer-chapter2-startbox.html">2.15 startbox</a><br>
+&nbsp;<a href="developer-chapter2-enterdata.html">2.16 enterdata</a><br>
+&nbsp;<a href="developer-chapter2-endbox.html">2.17 endbox</a><br>
+&nbsp;<a href="developer-chapter2-startform.html">2.18 startform</a><br>
+&nbsp;<a href="developer-chapter2-addcheckbox.html">2.19 addcheckbox</a><br>
+&nbsp;<a href="developer-chapter2-addradiobox.html">2.20 addradiobox</a><br>
+&nbsp;<a href="developer-chapter2-addselectbox.html">2.21 addselectbox</a><br>
+&nbsp;<a href="developer-chapter2-addoption.html">2.22 addoption</a><br>
+&nbsp;<a href="developer-chapter2-endselectbox.html">2.23 endselectbox</a><br>
+&nbsp;<a href="developer-chapter2-addinputbox.html">2.24 addinputbox</a><br>
+&nbsp;<a href="developer-chapter2-addtextbox.html">2.25 addtextbox</a><br>
+&nbsp;<a href="developer-chapter2-addsubmit.html">2.26 addsubmit</a><br>
+&nbsp;<a href="developer-chapter2-addreset.html">2.27 addreset</a><br>
+&nbsp;<a href="developer-chapter2-addhiddendata.html">2.28 addhiddendata</a><br>
+&nbsp;<a href="developer-chapter2-addbutton.html">2.29 addbutton</a><br>
+&nbsp;<a href="developer-chapter2-endform.html">2.30 endform</a><br>
+&nbsp;<a href="developer-chapter2-addlink.html">2.31 addlink</a><br>
+&nbsp;<a href="developer-chapter2-addimage.html">2.32 addimage</a><br>
+&nbsp;<a href="developer-chapter2-addtext.html">2.33 addtext</a><br>
+&nbsp;<a href="developer-chapter2-addboldtext.html">2.34 addboldtext</a><br>
+&nbsp;<a href="developer-chapter2-additalictext.html">2.35 additalictext</a><br>
+&nbsp;<a href="developer-chapter2-addlinebreak.html">2.36 addlinebreak</a><br>
+&nbsp;<a href="developer-chapter2-addhorizontalline">2.37 addhorizontalline</a><br>
+&nbsp;<a href="developer-chapter2-startlist.html">2.38 startlist</a><br>
+&nbsp;<a href="developer-chapter2-additem.html">2.39 additem</a><br>
+&nbsp;<a href="developer-chapter2-endlist.html">2.40 endlist</a><br>
+<a href="developer-chapter3.html">Chapter 3: Authentication Module</a><br>
+&nbsp;<a href="developer-chapter3-guidance.html">3.1 Guidance</a><br>
+&nbsp;<a href="developer-chapter3-new.html">3.2 new</a><br>
+&nbsp;<a href="developer-chapter3-loadsettings.html">3.3 loadsettings</a><br>
+&nbsp;<a href="developer-chapter3-capabilities.html">3.4 capabilities</a><br>
+&nbsp;<a href="developer-chapter3-convert.html">3.5 convert</a><br>
+&nbsp;<a href="developer-chapter3-dateconvert.html">3.6 dateconvert</a><br>
+&nbsp;<a href="developer-chapter3-geterror.html">3.7 geterror</a><br>
+&nbsp;<a href="developer-chapter3-connect.html">3.8 connect</a><br>
+&nbsp;<a href="developer-chapter3-disconnect.html">3.9 disconnect</a><br>
+&nbsp;<a href="developer-chapter3-getuserlist.html">3.10 getuserlist</a><br>
+&nbsp;<a href="developer-chapter3-getpermissions.html">3.11 getpermissions</a><br>
+&nbsp;<a href="developer-chapter3-adduser.html">3.12 adduser</a><br>
+&nbsp;<a href="developer-chapter3-edituser.html">3.13 edituser</a><br>
+&nbsp;<a href="developer-chapter3-deleteuser.html">3.14 deleteuser</a><br>
+&nbsp;<a href="developer-chapter3-userauth.html">3.15 userauth</a><br>
+&nbsp;<a href="developer-chapter3-flushusers.html">3.16 flushusers</a><br>
+&nbsp;<a href="developer-chapter3-populatetables.html">3.17 populatetables</a><br>
+<a href="developer-chapter4.html">Chapter 4: Output Format Module</a><br>
+&nbsp;<a href="developer-chapter4-guidance.html">4.1 Guidance</a><br>
+&nbsp;<a href="developer-chapter4-new.html">4.2 new</a><br>
+&nbsp;<a href="developer-chapter4-initialise.html">4.3 initialise</a><br>
+&nbsp;<a href="developer-chapter4-loadsettings.html">4.4 loadsettings</a><br>
+&nbsp;<a href="developer-chapter4-getoptions.html">4.5 getoptions</a><br>
+&nbsp;<a href="developer-chapter4-errorflag.html">4.6 errorflag</a><br>
+&nbsp;<a href="developer-chapter4-errormessage.html">4.7 errormessage</a><br>
+&nbsp;<a href="developer-chapter4-clearflag.html">4.8 clearflag</a><br>
+&nbsp;<a href="developer-chapter4-processimage.html">4.9 processimage</a><br>
+&nbsp;<a href="developer-chapter4-languagestrings.html">4.10 languagestrings</a><br>
+<a href="developer-chapter5.html">Chapter 5: Export Format Module</a><br>
+&nbsp;<a href="developer-chapter5-guidance.html">5.1 Guidance</a><br>
+&nbsp;<a href="developer-chapter5-new.html">5.2 new</a><br>
+&nbsp;<a href="developer-chapter5-initialise.html">5.3 initialise</a><br>
+&nbsp;<a href="developer-chapter5-loadsettings.html">5.4 loadsettings</a><br>
+&nbsp;<a href="developer-chapter5-getoptions.html">5.5 getoptions</a><br>
+&nbsp;<a href="developer-chapter5-exportimage.html">5.6 exportimage</a><br>
+&nbsp;<a href="developer-chapter5-errorflag.html">5.7 errorflag</a><br>
+&nbsp;<a href="developer-chapter5-errormessage.html">5.8 errormessage</a><br>
+&nbsp;<a href="developer-chapter5-clearflag.html">5.9 clearflag</a><br>
+&nbsp;<a href="developer-chapter5-languagestrings.html">5.10 languagestrings</a><br>
+<a href="developer-chapter6.html">Chapter 6: Xestia Scanner Server Page Format</a><br>
+<a href="developer-chapter7.html">Chapter 7: Languages</a>
+		</div>
+	</body>
+</html>

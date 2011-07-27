@@ -1,5 +1,5 @@
-Kiriwrite uses a regular expression for checking if UTF8 data that is 
-passed to it is valid is from the World Wide Web Consortium (W3C) 
+Xestia Scanner Server uses a regular expression for checking if UTF8 data 
+that is passed to it is valid is from the World Wide Web Consortium (W3C) 
 website. ( http://www.w3.org )
 
 The W3C Software License (the 31st December 2002 version) 

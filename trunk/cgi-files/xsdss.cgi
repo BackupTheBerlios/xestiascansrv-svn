@@ -105,7 +105,7 @@ if (!$auth_username || !$auth_seed){
 
 	# The authentication data contains invalid input.
 	
-	$auth_validinput eq 0;
+	$auth_validinput = 0;
 	
 }
 
@@ -244,6 +244,7 @@ if ($form_data->{'mode'}){
 				my $http_query_previewdocument = $form_data->{'previewdocument'};
 				my $http_query_switch = $form_data->{'switch'};
 
+				$http_query_previewdocument = "no" if !$http_query_previewdocument;
 				$http_query_switch = "no" if !$http_query_switch;
 				
 				# Get the variables needed for the subroutine.

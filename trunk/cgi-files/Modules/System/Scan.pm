@@ -891,7 +891,6 @@ sub xestiascan_scan_final{
 		
 		my (%selectedmodules, $selectedmodules);
 		
-		my (%selectedmodules);
 		my (%exportmodulesettings, $exportmodulesettings);
 		my (%exportmodulesettings_final);
 		

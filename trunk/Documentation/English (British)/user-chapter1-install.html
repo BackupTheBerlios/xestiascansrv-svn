@@ -22,11 +22,13 @@ Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> |
 <b>Documentation</b> – Documentation that is available in several languages.<br>
 <b>cgi-files</b> – The main Xestia Scanner Server script, associated modules, installer scripts and language files. <br>
 &nbsp;<b>Modules</b> – Modules for Xestia Scanner Server are stored here.<br>
-&nbsp;<b>Auth</b> – Authentication modules are stored here.<br>
-&nbsp;<b>Export</b> – Export modules are stored here.<br>
-&nbsp;<b>Presentation</b> – Presentation modules are stored here.<br>
-&nbsp;<b>Output</b> – Output modules are stored here.<br>
-<b>lang</b> – The directory for language files in Xestia Scanner Server.<br>
+&nbsp;&nbsp;<b>Auth</b> – Authentication modules are stored here.<br>
+&nbsp;&nbsp;<b>Export</b> – Export modules are stored here.<br>
+&nbsp;&nbsp;<b>Presentation</b> – Presentation modules are stored here.<br>
+&nbsp;&nbsp;<b>Output</b> – Output modules are stored here.<br>
+&nbsp;&nbsp;<b>System</b> – System modules are stored here.<br>
+&nbsp;<b>lang</b> – The directory for language files in Xestia Scanner Server.<br>
+&nbsp;<b>scans</b> – The directory for scanned documents in Xestia Scanner Server.<br>
 <b>misc</b> – Miscellaneous files (mainly for developers).<br>
 <b>non-cgi-files</b> – Non CGI files that need to be placed outside of the cgi-bin directory (such as the images for the default layout).
 &nbsp;<b>images</b> – Images for the default layout.
@@ -125,6 +127,12 @@ The following permissions should be set for the files that have been copied to t
    <td class="tabledata">lang/*.lang</td>
    <td class="tabledata">R</td>
    <td class="tabledata">R</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>scans</b></td>
+   <td class="tabledata">RWX</td>
+   <td class="tabledata">RX</td>
    <td class="tabledata">None</td>
  </tr>
  <tr>

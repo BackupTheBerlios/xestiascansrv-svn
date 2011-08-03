@@ -142,7 +142,7 @@ if ($auth_validinput eq 1){
 		
 	$successful_auth = 1 if $auth_result eq 1;
 	$auth_failure = 1 if $auth_result ne 1;
-	$auth_failure = 0 if $auth_seed eq "";
+	$auth_failure = 0 if (!$auth_seed || $auth_seed eq "");
 	
 	# Disconnect from the database server.
 	

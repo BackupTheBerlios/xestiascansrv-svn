@@ -208,6 +208,8 @@ sub xestiascan_users_add{
 	
 	my $confirm = shift;
 	
+	$confirm = 0 if !$confirm;
+	
 	# Connect to the database server.
 
 	$main::xestiascan_authmodule->connect();

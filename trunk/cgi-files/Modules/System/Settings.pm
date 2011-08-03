@@ -516,9 +516,9 @@ sub xestiascan_settings_edit{
 
 		# Check if the database module with the filename given exists.
 
-		my $dbmodule_exists = xestiascan_fileexists("Modules/Auth/" . $settings_authmodule . ".pm");
+		my $authmodule_exists = xestiascan_fileexists("Modules/Auth/" . $settings_authmodule . ".pm");
 
-		if ($dbmodule_exists eq 1){
+		if ($authmodule_exists eq 1){
 
 			# The database module does not exist so return an error.
 
@@ -808,7 +808,7 @@ sub xestiascan_settings_edit{
 	my $authmodule;
 	my $authmodule_file 		= "";
 	my $authmodule_count		= 0;
-	my $authmodule_config		= $main::xestiascan_config{"system_dbmodule"};
+	my $authmodule_config		= $main::xestiascan_config{"system_authmodule"};
 
 	# Open and get the list of database modules (perl modules) by getting
 	# only files which end in .pm.

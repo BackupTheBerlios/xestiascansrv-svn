@@ -961,6 +961,18 @@ sub adduser{
 	my $adminpriv	= "FALSE";
 	my $enabledpriv	= "FALSE";
 	
+	if (!$userinfo{"Enabled"}){
+		
+		$userinfo{"Enabled"} = "off";
+		
+	}
+	
+	if (!$userinfo{"Admin"}){
+		
+		$userinfo{"Admin"} = "off";
+		
+	}
+	
 	$adminpriv = "TRUE" if $userinfo{Admin} eq "on";
 	$enabledpriv = "TRUE" if $userinfo{Enabled} eq "on";
 	

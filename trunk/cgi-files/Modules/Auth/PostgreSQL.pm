@@ -1060,18 +1060,6 @@ sub edituser{
 		
 	}
 	
-	if (!$data{"Enabled"}){
-	
-		$data{"Enabled"} = "off";
-		
-	}
-	
-	if (!$data{"Admin"}){
-
-		$data{"Admin"} = "off";
-		
-	}
-	
 	# Check if the username exists.
 	
 	my $sqlquery = "";
@@ -1120,6 +1108,18 @@ sub edituser{
 		# Update the user information.
 		
 		$sqlquery = "UPDATE " . $class->convert($options{"TablePrefix"}) . "_users SET";
+		
+		if (!$data{"Enabled"}){
+			
+			$data{"Enabled"} = "off";
+			
+		}
+		
+		if (!$data{"Admin"}){
+			
+			$data{"Admin"} = "off";
+			
+		}
 		
 		# Check if the account is enabled or not.
 		

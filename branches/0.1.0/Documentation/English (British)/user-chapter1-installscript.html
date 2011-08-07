@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - User Documentation - 1.3 Installer Script</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.3 Installer Script</span>
+<br><br>
+After pointing your browser to the installer script, a page appears which guides you through configuring the settings for Xestia Scanner Server.
+<br><br>
+At the top of the page a drop down box is available to change the language of the installer script to another language which is more easier to understand, simply select the language from the drop down box and click on the Switch button, the script will then switch to the selected language.
+<br><br>
+The installer script will preform three tests, the first being to check if all the needed modules are there, the second test is to check if the modules needed for the authentication modules are there and finally a test to check if the directories have their correct permissions set.
+<br><br>
+Before the settings can be configured, checks are made to make sure that all of the needed modules are installed properly. If any of the needed modules are missing an error message will appear saying that one or more of the required Perl modules is missing and will need to be installed which can be done from the CPAN interface.
+<br><br>
+The installer script then checks to see if at least of the Perl modules for the database modules are installed. If none of the Perl modules needed for the authentication modules are found then an error message will appear saying that none of the Perl modules needed for the authentication modules are installed and will need to be installed which can be done from the CPAN interface.
+<br><br>
+Finally, the installer script then checks to see if the directories have the minimum correct permissions set. If one or more of the directories has an error, then a message appears saying to make sure that the correct permissions are set.
+<br><br>
+<div class="messagebox">
+<div class="message hint"><b>Hint</b><br><br>
+More information on solving problems that occur while installing Xestia Scanner Server can be found in Chapter 5: Troubleshooting.
+</div>
+</div>
+<br><br>
+When the installer finds that everything is fine in regards to Perl modules and file permissions, a form appears allowing to configure the Xestia Scanner Server installation to specific needs. Some default values are given which will work with the file-based authentication modules.
+<br><br>
+The configuration settings in detail:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Images (URI path)</td>
+  <td class="tabledata">Specifies the URI path for the images used in the page layout.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Scans (URI path)</td>
+  <td class="tabledata">Specifies the URI path for the scanned images.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Scans (Filesystem path)</td>
+  <td class="tabledata">Specifies the Filesystem path to store the scanned images when processed by an output module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Date Format</td>
+  <td class="tabledata">Specifies the date format to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">System Language</td>
+  <td class="tabledata">Specifies the language to use for Xestia Scanner Server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Presentation Module</td>
+  <td class="tabledata">Specifies the presentation module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Output Module</td>
+  <td class="tabledata">Specifies the default output module to use after a scan is made.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Authentication Module</td>
+  <td class="tabledata">Specifies the authentication module to use for the user management.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Server</td>
+  <td class="tabledata">Specifies the database server to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Port</td>
+  <td class="tabledata">Specifies the database server port to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Protocol</td>
+  <td class="tabledata">Specifies the database protocol to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Name</td>
+  <td class="tabledata">Specifies the database name to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Username</td>
+  <td class="tabledata">Specifies the database username to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Password</td>
+  <td class="tabledata">Specifies the database password to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Table Prefix</td>
+  <td class="tabledata">Specifies the database table prefix to use for the authentication module.</td>
+ </tr>
+</table>
+<br><br>
+There are two options also available to delete the installer script when finished and also the multiuser script if it is not needed. 
+<br><br>
+Click on the Save Settings button to write the configuration file or the Reset Settings button to restore the settings to their default values.
+<br><br>
+After clicking on the Save Settings button, some checks are made to make sure that data passed is correct, the configuration file is written (and the installer and multiuser installer scripts are deleted if requested) and a message appears saying that Xestia Scanner Server can now be used by clicking on the link at the bottom of the page.
+<br><br>
+If the authentication module selected is a module which needs to be setup for the user management (which is also known as a multiuser authentication module) then you'll be prompted to run the Multiuser Installer script.
+		</div>
+	</body>
+</html>

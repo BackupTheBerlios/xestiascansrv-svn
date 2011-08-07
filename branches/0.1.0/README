@@ -1,0 +1,9 @@
+Xestia Scanner Server is a web-based (browser-based) interface for using your
+scanner over a network. It uses SANE (Scanner Access Now Easy) to processed
+scanned images and documents.
+
+For information on how to install, usage and hints on using Xestia Scanner 
+Server read the Documentation that is in the Documentation directory.
+
+Xestia Scanner Server is licensed under the GPL (version 3). For more 
+information please read the COPYING file that is included with the archive.

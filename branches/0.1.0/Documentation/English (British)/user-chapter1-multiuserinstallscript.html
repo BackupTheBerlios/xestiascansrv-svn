@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - User Documentation - 1.4 Multiuser Installer Script</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.4 Multiuser Installer Script</span>
+<br><br>
+After pointing or being directed to this script, a page appears which guides you through setting up the multiuser tables.
+<br><br>
+At the top of the page a drop down box is available to change the language of the installer script to another language which is more easier to understand, simply select the language from the drop down box and click on the Switch button, the script will then switch to the selected language.
+<br><br>
+The installer will attempt to load the configuration file created from the installer script if that script was run previously to save time filling in those details again otherwise you will need to use the correct authentication module and the correct database server authentication details in order to setup the multiuser tables.
+<br><br>
+The configuration settings in detail:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Authentication Module</td>
+  <td class="tabledata">Specifies the authentication module to use. Only modules which have multiuser support are listed here.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Server</td>
+  <td class="tabledata">Specifies the database server to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Port</td>
+  <td class="tabledata">Specifies the database server port to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Protocol</td>
+  <td class="tabledata">Specifies the database protocol to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Name</td>
+  <td class="tabledata">Specifies the database name to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Username</td>
+  <td class="tabledata">Specifies the database username to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Password</td>
+  <td class="tabledata">Specifies the database password to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Database Table Prefix</td>
+  <td class="tabledata">Specifies the database table prefix to use for the authentication module.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Username</td>
+  <td class="tabledata">Specifies the username with administrative access to the scanner server software.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Password</td>
+  <td class="tabledata">Specifies the password to set the for administrative access account to the scanner server software.</td>
+ </tr>
+</table>
+<br><br>
+There are also options available to specify if certain tables (modules permissions, scanners permissions, sessions and users) should be created. If you are installing Xestia Scanner Server for the first time then make sure all of the checkboxes for creating the tables are checked.
+<br><br>
+The tables can be forcibly recreated if there are problems with the existing tables by simply checking the 'Force recreation of the selected tables' box.This will delete and recreate the tables as if it was being installed.
+<br><br>
+As with the original install script, there are two options also available to delete the installer script when finished and also the multiuser script if it is not needed (otherwise, leave this option unchecked if you need to create more tables).
+<br><br>
+After clicking on the Create tables button, the tables are then created and if any errors have occurred whilst creating the tables then they will be displayed on the next screen. If no errors have occurred, the installation is now complete and you can click on the 'Start using Xestia Scanner Server' link.
+		</div>
+	</body>
+</html>

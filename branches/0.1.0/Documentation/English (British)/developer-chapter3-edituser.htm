@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.13 edituser</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">3.13 edituser</span>
+<br><br>
+Edits a user’s details.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->edituser(username, type, data);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->edituser(“User”, “User”, %userdata);
+</div>
+<br><br>
+<i>username</i><br>
+Specifies the username to use.
+<br><br>
+<i>type</i><br>
+Specifies the type of data. This is either User, Scanner, OutputModule or ExportModule.
+<br><br>
+<i>data</i><br>
+Specifies the data as a hash.
+<br><br>
+User Data Type Hash:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Username</td>
+  <td class="tabledata">Specifies the username to use for the new user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Name</td>
+  <td class="tabledata">Specifies the name of the new user.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Password</td>
+  <td class="tabledata">Specifies the password to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ConfirmPassword</td>
+  <td class="tabledata">Specifies the confirmed password to use (should be same as Password).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Admin</td>
+  <td class="tabledata">Specifies if the account has administrative privileges.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Enabled</td>
+  <td class="tabledata">Specifies if the account is enabled or not.</td>
+ </tr>
+</table>
+<br><br>
+Scanner Data Type Hash:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ScannerID</td>
+  <td class="tabledata">Specifies the scanner ID. A setting of “on” means the user should have permission to use this scanner.</td>
+ </tr>
+</table>
+<br><br>
+OutputModule Data Type Hash:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">OutputModule</td>
+  <td class="tabledata">Specifies the name of the module. A setting of “on” means the user should have permission to use the output module.</td>
+ </tr>
+</table>
+<br><br>
+ExportModule Data Type Hash:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ExportModule</td>
+  <td class="tabledata">Specifies the name of the module. A setting of “on” means the user should have permission to use the export module.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

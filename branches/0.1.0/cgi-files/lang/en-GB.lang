@@ -1,0 +1,327 @@
+[about]
+name = English (British)
+creator = Steve Brokenshire
+mailaddress = sbrokenshire|ao|xestia|dottie|co|dottie|uk
+
+[auth]
+login = Login
+loginbutton = Login
+username = User Name
+password = Password
+keeploggedin = Keep logged in
+cookiesrequired = Cookies support must be enabled in your browser in order to be to login.
+loginerror = The credentials supplied were invalid or you have been logged out as your session has expired. Please check that the username and password you have entered are correct and contact your system administrator if you are still unable to login.
+
+loggedout = Logged Out
+loggedoutmsg = You have logged out.
+displaylogin = Display the login page.
+
+[users]
+
+submenu_listusers = List Users
+submenu_adduser = Add User
+submenu_logoutallusers = Logout All Users
+
+userslist = Users List
+adduser = Add User
+edituser = Edit User
+deleteuser = Delete User
+
+userinformation = User Information
+userpermissions = User Permissions
+
+nameofoutputmoduleerror = The name of the output format module that caused this error is: %s
+nameofexportmoduleerror = The name of the export format module that caused this error is: %s
+
+permit = Permit
+
+returnuserlist = Return to the user list.
+
+adduserbutton = Add User
+edituserbutton = Edit User
+
+listusers = List Users
+showdeactivated = Show Deactivated Users
+update = Update
+username = User Name
+name = Name
+password = Password
+confirmpassword = Confirm Password
+adminprivs = Administrator Privileges
+accountenabled = Account Enabled
+scannerlist = Scanner List
+scannername = Scanner Name
+allowaccess = Allow Access
+connected = Connected
+devconnected = Connected
+devdisconnected = Disconnected
+outputmodulelist = Output Format Module List
+exportmodulelist = Export Format Module List
+modulename = Module Name
+available = Available
+modavailable = Available
+modunavailable = Unavailable
+newpassword = New Password
+confirmnewpassword = Confirm New Password
+
+userdetails = User Details
+
+edituser = Edit User
+
+useradded = User Added
+useraddedtolist = The user '%s' was added to the user list.
+
+useredited = User Edited
+usereditedsuccess = The user '%s' on the user list was edited.
+usereditedlogout = If the user being edited was yourself and you have changed your username, you will be logged out of the Kiriwrite.
+
+deleteuser = Delete User
+deleteuserareyousure = Are you sure you want to delete '%s' from the user list?
+deleteuserbutton = Yes, delete User
+noreturnuserlist = No, return to the user list.
+
+userdeleted = User Deleted
+userdeletedsuccess = The user '%s' was deleted from the user list.
+
+logoutallusers = Logout All Users
+logoutallquestion = Are you sure you want to logout all users?
+logoutallwarning = All users (including the user executing this action) will be logged out of the system and will need to log in again.
+logoutallsuccess = All users (including yourself) have been logged out.
+logoutallloginagain = You will need to log back in again.
+logoutallcontinue = Click on this link to continue.
+
+logoutallbutton = Logout All Users 
+
+[setting]
+
+submenu_viewsettings = View Settings
+submenu_editsettings = Edit Settings
+
+viewsettings = View Settings
+currentsettings = The current settings being used are the following:
+directories = Directories
+databasedirectory = Database Directory
+outputdirectory = Output Directory
+imagesuripath = Images (URI path)
+scansuripath = Scans (URI path)
+scansfspath = Scans (Filesystem path)
+display = Display
+textareacols = Text Area Columns
+textarearows = Text Area Rows
+pagecount = Pages on browse
+templatecount = Templates on browse
+filtercount = Filters on browse
+date = Date
+dateformat = Date Format
+language = Language
+systemlanguage = System Language
+modules = Modules
+presentationmodule = Presentation Module
+outputmodule = Output Format Module
+authmodule = Authentication Module
+altersettings = To alter the current settings, select the Edit Settings option at the top of the page.
+
+editsettings = Edit Settings
+warning = Warning: 
+warningmessage = Settings that have changed take effect after clicking on the 'Change Settings' button and viewing the confirmation message.
+singleday = D - Show single digit day if day value is less than 10.
+doubleday = DD - Show double digit day if day value is less than 10.
+singlemonth = M - Show single digit month if month value is less than 10.
+doublemonth = MM - Show double digit month if month value is less than 10.
+singleyear = Y - Show double digit year value.
+doubleyear = YY - Show four digit year value.
+singlehour = h - Show single digit hour if hour value is less than 10.
+doublehour = hh - Show double digit hour if hour value is less than 10.
+singleminute = m - Show single digit minute if minute value is less than 10.
+doubleminute = mm - Show double digit minute if minute value is less than 10.
+singlesecond = s - Show single digit second if second value is less than 10.
+doublesecond = ss - Show double digit second if second value is less than 10.
+othercharacters = Other Characters: / - < > ;
+databaseserver = Database Server
+databaseport = Database Port
+databaseprotocol = Database Protocol
+databasename = Database Name
+databaseusername = Database Username
+databasepassword = Database Password
+keepcurrentpassword = Keep the current password
+tableprefix = Table Prefix
+changesettingsbutton = Change Settings
+returnsettingslist = Return to the list of settings.
+settingsedited = Settings Edited
+settingseditedmessage = The settings have been changed and will take effect on the next page load of Xestia Scanner Server.
+
+[error]
+
+error = Error!
+extendederror = The extended information about the error is:
+generic = An error has occurred but not an error that is known to Kiriwrite.
+blankfilename = The filename specified was blank.
+blankvariable = A blank variable was specified.
+fileexists = A filename specified already exists.
+internalerror = An internal error has occurred within Kiriwrite.
+invalidaction = An invalid action was specified.
+invalidfilename = The filename given contains invalid characters.
+invalidmode = An invalid mode was specified.
+invalidutf8 = A UTF-8 string is invalid.
+invalidvariable = An variable with invalid data has been found.
+variabletoolong = A variable given is too long.
+authconnectionerror = An authentication (database) connection error has occurred.
+autherror = An authentication error occurred.
+authmoduleblank = The authentication module name given is blank.
+authmoduleinvalid = The name of the authentication module given is invalid.
+authmodulemissing = The authentication module with the name given is missing.
+blankdatetimeformat = The date and time format given is blank.
+blankdirectory = The directory name specified was blank.
+blankpictureid = The picture ID given was blank.
+blankvariable = The variable given was blank.
+bottomrightx = No value for Bottom Right X was given.
+bottomrightxinvalidnumber = The Bottom Right X value given is invalid.
+bottomrighty = No value for Bottom Right Y was given.
+bottomrightyinvalidnumber = The Bottom Right Y value given is invalid.
+brightnessblank = The brightness value given was blank.
+brightnessinvalidnumber = The brightness value given was invalid.
+colourblank = No setting for Colour was given.
+colourinvalidoption = The Colour setting given is invalid.
+invaliddirectory = The directory name specified was invalid.
+invaliddatetimeformat = The date and time format given is invalid.
+languagefilenamemissing = The language filename given does not exist.
+moduleinvalid = The module name given was invalid.
+nametoolong = The name given is too long.
+notpermitted = You do not have permission to preform this action in Xestia Scanner Server.
+outputmoduleblank = The output format module name given is blank.
+outputmoduleinvalid = The output format module name given is invalid.
+passwordblank = The password given was blank.
+passwordsdonotmatch = The passwords given do not match.
+passwordtoolong = The password given was too long.
+permissiontypeblank = The permission type given was blank.
+presmoduleblank = The presentation module name given is blank.
+presmoduleinvalid = The presentation module name given is invalid.
+presmodulemissing = The presentation module with the filename given is missing.
+rotateblank = The rotate option given is blank.
+rotateinvalidoption = The rotate option given is invalid.
+resolutionblank = The resolution value given was blank.
+resolutioninvalidnumber = The resolution value given was invalid.
+scannererror = An error occurred whilst trying to use the scanner.
+scannerpermissioninvalid = The scanner cannot be used as you don't have permission to use it.
+serverdatabasenameinvalid = The server database name given is invalid.
+serverdatabasenametoolong = The server database name given is too long.
+serverdatabasepasswordtoolong = The server database password given is too long.
+serverdatabasetableprefixinvalid = The server database table prefix given is invalid.
+serverdatabasetableprefixtoolong = The server database table prefix given is too long.
+serverdatabaseusernameinvalid = The server database username given is invalid.
+serverdatabaseusernametoolong = The server database username given is too long.
+servernameinvalid = The database server name given is invalid.
+servernametoolong = The database server name given is too long.
+serverportnumberinvalid = The database port number given is invalid.
+serverportnumberinvalidcharacters = The database port number given contains characters other than numbers.
+serverportnumbertoolong = The database port number given is too long.
+serverprotocolinvalid = An invalid database server protocol was specified.
+serverprotocolnametoolong = The database server protocol name given is too long.
+userediterror = An error occurred whilst editing the user details.
+userexists = A user with the username given already exists.
+userdoesnotexist = There is no user with the username given.
+usernameblank = The username given is blank.
+usernameinvalid = The username given is invalid.
+usernametoolong = The username given is too long.
+
+[options]
+edit = Edit
+delete = Delete
+compile = Compile
+
+[blank]
+noname = No Name
+nodescription = No Description
+blankdatabasename = Blank Database Name
+
+[common]
+alter = Alter
+setting = Setting
+value = Value
+restorecurrent = Restore current settings
+restoredefault = Restore default settings
+clearvalues = Clear values
+selectnone = Select None
+options = Options
+
+tags = Kiriwrite Tags:
+pagecontent = <kiriwrite:pagecontent> - Specifies the page content.
+pagetitle = <kiriwrite:pagetitle> - Specifies the page title (and page section depending on page settings).
+pagename = <kiriwrite:pagename> - Specifies the page name.
+pagedescription = <kiriwrite:pagedescription> - Specifies the page description.
+pagesection = <kiriwrite:pagesection> - Specifies the page section.
+pageautosection = <kiriwrite:autosection> - Automatic page section name.
+pageautotitle = <kiriwrite:autotitle> - Automatic page title (and page section depending on page settings).
+
+[menu]
+scanconfig = Scan Configuration
+userconfig = User Configuration
+settingsconfig = Settings Configuration
+logout = Logout
+
+[scan]
+scanconfig = Scan Configuration
+
+process = Process
+switchscanner = Switch Scanner
+previewdocument = Preview Document
+startscanning = Start Scanning
+
+noscanners = No scanners are available. Please check the connections to the server and make sure that the modules/drivers for the scanners are enabled.
+scanner = Scanner :
+documentpreview = Document Preview
+
+documentsettings = Document Settings
+picturedimensions = Picture Dimensions
+topleftx = Top Left X: 
+toplefty = Top Left Y: 
+bottomrightx = Bottom Right X: 
+bottomrighty = Bottom Right Y: 
+picturesettings = Picture Settings
+pictureresolution = Picture Resolution: 
+rotate = Rotate: 
+r0deg = 0 degrees
+r90deg = 90 degrees
+r180deg = 180 degrees
+r270deg = 270 degrees
+brightness = Brightness: 
+colour = Colour:
+colourrgb = Colour (RGB)
+grey = Greyscale
+
+dpi = dpi
+mm = mm
+
+picturesettings = Picture Settings
+outputmoduleresults = Output Format Module Results
+outputmodulefailed = The output format module failed with the following error: %s
+outputmoduleunable = As the output format module failed, the process is unable to continue.
+outputmodulecomplete = The output format module completed with no errors.
+exportmoduleresults = Export Format Modules Results
+exportmodulefailed = The export format module failed with the following error: %s 
+exportmodulecomplete = The export format module completed with no errors.
+noexportmoduleselected = No export format modules were selected.
+resultsuffix = %s - Results
+imagepreview = Image Preview
+outputformatsettings = Output Format Module Settings
+outputmodule = Output format module: 
+noneavailable = None available.
+nooutputmodulesavail = There are no output format modules available. Unable to continue.
+nooutputmoduleopts = There are no options available for this output format module.
+outputmodulemissing = The output format module with the filename given is missing. Unable to continue.
+outputmoduleinvalidfilepermissions = You cannot use this output format module as the file permissions set for it are invalid. Unable to continue.
+outputmoduleinvaliddbpermissions = You cannot use this output format module as you do not have permission to use it. Unable to continue.
+outputmoduleinvalidname = The name of the output format module given is invalid. Unable to continue.
+exportformatsettings = Export Format Module Settings
+noexportmodulesavail = There are no export format modules available. Unable to continue.
+exportmoduleinvalidfilepermissions = You cannot use this export format module as you do not have permission to use it.
+exportmoduleinvaliddbpermissions = You cannot use this export format module as the file permissions set for it are invalid.
+exportmoduleinvalidname = The name of the export format module given is invalid.
+exportmodulemissing = The export format module with the filename given is missing.
+noexportmoduleopts = There are no options available for this export format module.
+
+causedpictureresolution = %s (caused by the Picture Resolution setting)
+causedtopleftx = %s (caused by the Top Left X Picture Dimension setting)
+causedtoplefty = %s (caused by the Top Left Y Picture Dimension setting)
+causedbottomrightx = %s (caused by the Bottom Right X Picture Dimension setting)
+causedbottomrighty = %s (caused by the Bottom Right Y Picture Dimension setting)

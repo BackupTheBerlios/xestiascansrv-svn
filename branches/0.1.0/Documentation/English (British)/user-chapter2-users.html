@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - User Documentation - 2.2 User Management</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">2.2 User Management</span>
+<br><br>
+To ensure users do not use or use only certain scanners, output format modules and export format modules, user management is required.
+<br><br>
+User management can be done (as a user with administrative privileges) by clicking on the User Management link on the top menu.
+<br><br>
+<b>2.1.1 Add a User</b>
+<br><br>
+To add a user to the user management list, click on the Add Users button on the user list. This will then display the following settings to enter for the user under the User Details section:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">User name</td>
+  <td class="tabledata">Specifies the username of the account.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Name</td>
+  <td class="tabledata">Specifies the name of the person associated with this account.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Administrator Privileges</td>
+  <td class="tabledata">Specifies if the account has administrator privileges. An account with administrator privileges is able to manage the users who can access scanners and can the settings for the scanner server software itself.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Account Enabled</td>
+  <td class="tabledata">Specifies if the account should be enabled or disabled. If the account enabled button is not checked then this account will not be able to login.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Password</td>
+  <td class="tabledata">Specifies the password to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Confirm Password</td>
+  <td class="tabledata">Confirms the password to use by entering it a second time.</td>
+ </tr>
+</table>
+<br>
+The next section is the Scanner List which lists the permissions for the scanners. To allow access to a scanner, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+The third section is the Output Format Module List which lists the permissions for the output format modules. To allow access to an output format module, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+The final section is the Export Format Module List which lists the permissions for the export format modules. To allow access to an export format module, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+To confirm the settings given, click on the Add User button at the bottom of the screen. To clear the values and start again click on the Clear values also at the bottom of the screen.
+<br><br>
+<b>2.1.2 Edit a User</b>
+<br><br>
+To edit a user’s settings, select a user on the user management list and click on the Edit link in the List Users screen. This will display the following settings to enter for the user under the User Details section:
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">User name</td>
+  <td class="tabledata">Specifies the username of the account.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Name</td>
+  <td class="tabledata">Specifies the name of the person associated with this account.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Administrator Privileges</td>
+  <td class="tabledata">Specifies if the account has administrator privileges. An account with administrator privileges is able to manage the users who can access scanners and can the settings for the scanner server software itself.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Account Enabled</td>
+  <td class="tabledata">Specifies if the account should be enabled or disabled. If the account enabled button is not checked then this account will not be able to login.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">New Password</td>
+  <td class="tabledata">Specifies the new password to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Confirm New Password</td>
+  <td class="tabledata">Confirms the new password to use by entering it a second time.</td>
+ </tr>
+</table>
+<br>
+The next section is the Scanner List which lists the permissions for the scanners. It will also display the permissions for any scanners which aren’t plugged in but the user can access when they are plugged in again. To allow access to a scanner, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+The third section is the Output Format Module List which lists the permissions for the output format modules. To allow access to an output format module, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+The final section is the Export Format Module List which lists the permissions for the export format modules. To allow access to an export format module, simply check the Allow Access checkbox next to the name of the scanner.
+<br><br>
+To save the changed settings for the user, click on the Edit User button. To revert the settings back to their original settings click on the Clear values button.
+<br><br>
+<div class="messagebox">
+<div class="message note">
+<b>Note</b>
+<br><br>If the username is changed, the user under the previous username will be logged out and will have to login using the new username.
+</div>
+</div>
+<br><br>
+<b>2.1.3 Delete a User</b>
+<br><br>
+To delete a user, click on the Delete link next to the user you want to delete on the user management list and to confirm deletion click on the ‘Yes, delete user’ button. This will remove the user from the list.
+<br><br>
+Deleting the administrative account used to manage users is not recommended as the only way to recover from this is to rerun the Multiuser Installer script again.
+<br><br>
+<b>2.1.4 Logout All Users</b>
+<br><br>
+If you need to logout all users for the purposes of maintenance or in the event of an emergency, you are able to logout all users. To do this, click on the Logout All Users button on the users list and then click on ‘Logout All Users’ to confirm this action. This will log everyone out (including the user requesting this action). You will need to log back in again to continue.
+		</div>
+	</body>
+</html>

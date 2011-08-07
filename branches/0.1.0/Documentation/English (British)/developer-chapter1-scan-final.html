@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.19 xestiascan_scan_final</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.19 xestiascan_scan_final</span>
+<br><br>
+xestiascan_scan_final scans a document and presents a list of available output and export modules.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_scan_final(confirm, pageoptions);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$previewoptions{ScannerID} = $form_data->{'scanner'};<br>
+$previewoptions{Brightness} = $form_data->{'brightness'};<br>
+$previewoptions{Contrast} = $form_data->{'contrast'};<br>
+$previewoptions{Rotate} = $form_data->{'rotate'};<br>
+$previewoptions{Colour} = $form_data->{'colourtype'};<br>
+$previewoptions{Resolution} = $form_data->{'imagedpi'};<br>
+$previewoptions{TopLeftX} = $form_data->{'topleftx'};<br>
+$previewoptions{TopLeftY} = $form_data->{'toplefty'};<br>
+$previewoptions{BottomRightX} = $form_data->{'bottomrightx'};<br>
+$previewoptions{BottomRightY} = $form_data->{'bottomrighty'};<br>
+<br><br>
+$page_data = xestiascan_scan_final(1, %previewoptions);<br>
+</div>
+<br><br>
+<i>confirm</i><br>
+Confirms the action to scan a document
+<br><br>
+<i>pageoptions</i><br>
+Specifies the following document options as a hash.
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Value</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ScannerID</td>
+  <td class="tabledata">Specifies the SANE Scanner ID to preview a document with.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Brightness</td>
+  <td class="tabledata">Specifies how bright the document should have.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Contrast</td>
+  <td class="tabledata">Specifies how much contrast the document have.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Rotate</td>
+  <td class="tabledata">Specifies the rotation of the document (0, 90, 180, or 270 degrees).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Colour</td>
+  <td class="tabledata">Specifies if the document should be grey or RGB.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Resolution</td>
+  <td class="tabledata">Specifies the resolution of the document.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">TopLeftX</td>
+  <td class="tabledata">Specifies the top left X position of the document to scan from.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">TopLeftY</td>
+  <td class="tabledata">Specifies the top left Y position of the document to scan from.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">BottomRightX</td>
+  <td class="tabledata">Specifies the bottom right X position of the document to scan to.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">BottomRightY</td>
+  <td class="tabledata">Specifies the bottom right Y position of the document to scan to.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

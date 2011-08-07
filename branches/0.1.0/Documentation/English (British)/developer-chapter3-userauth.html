@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 3.15 userauth</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">3.15 userauth</span>
+<br><br>
+Authenticates a user. Return a value of 1 and the seed value if the user has been authenticated correctly. If a valid seed has been passed along with the user then it will return a value of 1. Invalid authentications will return a value of 0.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+$xestiascan_authmodule->userauth(type, user, password, keeploggedin);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$login = $xestiascan_authmodule->userauth(“password”, “User”, “moo”, 1);
+$login = $xestiascan_authmodule->userauth(“seed”, “User”, “seed”);
+</div>
+<br><br>
+<i>type</i><br>
+Specifies the type of authentication. Either Password (passes a password to the userauth module) or Seed (passes a seed for a user who is already logged in).
+<br><br>
+<i>user</i><br>
+Specifies the username to authenticate.
+<br><br>
+<i>password</i><br>
+Specifies the password or seed to use.
+<br><br>
+<i>keeploggedin</i><br>
+Specifies if the user is to keep logged in. By default the user is logged in for three hours but this option will keep the user logged in for one year.
+		</div>
+	</body>
+</html>

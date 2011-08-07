@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.3 xestiascan_language</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.3 xestiascan_language</span>
+<br><br>
+xestiascan_language processes language strings that need to have certain pieces of text inserted. This subroutine should be used only if the language string needs to have text inserted (such as values).
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_language(string, text1, (text2, text3));
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+xestiascan_language(“%s, %s, %s %s and %s”, “one”, “two”, “three”, “four”, “five”);
+</div>
+<br><br>
+<i>string</i><br>
+Specifies the string to insert text into.
+<br><br>
+<i>text1, text2, text3</i><br>
+Specifies the text to insert into the string and the amount of parameters to pass depends on how may %s’es there are in the language string.
+		</div>
+	</body>
+</html>

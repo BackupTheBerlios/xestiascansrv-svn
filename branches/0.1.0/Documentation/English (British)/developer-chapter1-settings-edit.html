@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.33 xestiascan_settings_edit</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.33 xestiascan_settings_edit</span>
+<br><br>
+xestiascan_settings_edit edits the settings for the Xestia Scanner Server installation. The settings can only be edited if the user has administrative privileges.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_settings_edit(options);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+$pagedata = xestiascan_settings_edit(%options);
+</div>
+<br><br>
+<i>options</i><br>
+Specifies the new settings as a hash. The settings accepted are:
+<br><br>
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Setting</td>
+  <td class="tableheading">Description</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ImagesURIPath</td>
+  <td class="tabledata">Specifies the URI path of the images directory (used for graphics to make the page look more pleasing).</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ScansURIPath</td>
+  <td class="tabledata">Specifies the URI path of the scans directory.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">ScansFSPath</td>
+  <td class="tabledata">Specifies the filesystem path of the scans directory.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DateTimeFormat</td>
+  <td class="tabledata">Specifies the date and time format to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">SystemLanguage</td>
+  <td class="tabledata">Specifies the language to use for Xestia Scanner Server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">PresentationModule</td>
+  <td class="tabledata">Specifies the presentation module to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">AuthModule</td>
+  <td class="tabledata">Specifies the authentication module to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">OutputModule</td>
+  <td class="tabledata">Specifies the output module to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabaseServer</td>
+  <td class="tabledata">Specifies the address of the database server to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabasePort</td>
+  <td class="tabledata">Specifies the port to use to connect to the database server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabaseProtocol</td>
+  <td class="tabledata">Specifies the protocol to use to connect to the database server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabaseSQLDatabase</td>
+  <td class="tabledata">Specifies the name of the database to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabaseUsername</td>
+  <td class="tabledata">Specifies the username to use for authenticating on the database server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabasePassword</td>
+  <td class="tabledata">Specifies the password to use for authenticating on the database server.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabasePasswordKeep</td>
+  <td class="tabledata">Specifies if the existing password for authenticating on the database server should be kept.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">DatabaseTablePrefix</td>
+  <td class="tabledata">Specifies the table prefix to use.</td>
+ </tr>
+ <tr>
+  <td class="tabledata">Confirm</td>
+  <td class="tabledata">Confirms the action to edit the settings.</td>
+ </tr>
+</table>
+		</div>
+	</body>
+</html>

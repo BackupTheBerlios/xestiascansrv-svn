@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - User Documentation - 1.2: Installing Xestia Scanner Server</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.2: Installing Xestia Scanner Server</span>
+<br><br><b>1.2.1: Copying files</b>
+<br><br>Before Xestia Scanner Server can be used, the files need to be copied to the correct place. After extracting the archive, the structure of the extracted archive should be like this:
+<br><br>
+<b>Documentation</b> – Documentation that is available in several languages.<br>
+<b>cgi-files</b> – The main Xestia Scanner Server script, associated modules, installer scripts and language files. <br>
+&nbsp;<b>Modules</b> – Modules for Xestia Scanner Server are stored here.<br>
+&nbsp;&nbsp;<b>Auth</b> – Authentication modules are stored here.<br>
+&nbsp;&nbsp;<b>Export</b> – Export modules are stored here.<br>
+&nbsp;&nbsp;<b>Presentation</b> – Presentation modules are stored here.<br>
+&nbsp;&nbsp;<b>Output</b> – Output modules are stored here.<br>
+&nbsp;&nbsp;<b>System</b> – System modules are stored here.<br>
+&nbsp;<b>lang</b> – The directory for language files in Xestia Scanner Server.<br>
+&nbsp;<b>scans</b> – The directory for scanned documents in Xestia Scanner Server.<br>
+<b>misc</b> – Miscellaneous files (mainly for developers).<br>
+<b>non-cgi-files</b> – Non CGI files that need to be placed outside of the cgi-bin directory (such as the images for the default layout).
+&nbsp;<b>images</b> – Images for the default layout.
+<br><br>
+The files in the cgi-files directory should be copied to the cgi-bin<sup>1</sup> directory<sup>2</sup> and the files in the non-cgi-files directory should be copied to a directory which can be accessed from the web server (so that it can be read). This must be copied to outside the cgi-files. 
+<br><br>
+<b>1.2.2 Setting Permissions</b>
+<br><br>
+The following permissions should be set for the files that have been copied to the cgi-files directory based on the user/web server daemon set as owner of the files and the web server daemon set as the group (the following file list should apply to those running *nix/BSD systems): 
+<table class="infotable">
+ <tr>
+  <td class="tableheading">Filename</td>
+  <td class="tableheading">Owner</td>
+  <td class="tableheading">Group</td>
+  <td class="tableheading">Others</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><i>(Top Directory)</i><br>After installation it is advised to make this directory readonly to prevent settings changed.</td>
+   <td class="tabledata">RWX</td>
+   <td class="tabledata">RWX</td>
+   <td class="tabledata">None</td>
+</tr>
+ <tr>
+   <td class="tabledata"><b>Modules</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>Modules/Auth</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">Modules/Auth/*.pm</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>   
+   <td class="tabledata"><b>Modules/Export</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">Modules/Export/*.pm</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>Modules/Presentation</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">Modules/Presentation/*.pm</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>Modules/Output</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">Modules/Output/*.pm</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>Modules/System</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">Modules/System/*.pm</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>lang</b></td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">lang/*.lang</td>
+   <td class="tabledata">R</td>
+   <td class="tabledata">R</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata"><b>scans</b></td>
+   <td class="tabledata">RWX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">xsdss.cgi</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">install.cgi</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">install-multiuser.cgi</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">RX</td>
+   <td class="tabledata">None</td>
+ </tr>
+ <tr>
+   <td class="tabledata">page.html</td>
+   <td class="tabledata">R</td>
+   <td class="tabledata">R</td>
+   <td class="tabledata">None</td>
+ </tr>
+</table>
+<br><br>
+
+R = Read, W = Write, X = Execute/Allow directory listing
+
+<br><br>
+For the non-cgi files directory, read only permissions should be set on all files (and read and allow directory listings for directories) as no writing should be needed. Once this is done, the installer script can be run by browsing to URI location of where the files in the cgi-files directory were in place and adding install.cgi to the end of it.
+<br><br>
+<div class="footnote"><sup>1</sup> The cgi-bin directory is used for storing scripts that use the Common Gateway Interface (CGI). CGI scripts are typically associated with Perl scripts but can also be C++, C, Python, shell script and many others.<br><br><sup>2</sup> Some servers are configured so that CGI scripts can run from any directory so in this case Xestia Scanner Server doesn't have to be placed in the cgi-bin directory. 
+</div>
+		</div>
+	</body>
+</html>

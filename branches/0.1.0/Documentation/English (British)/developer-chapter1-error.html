@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.4 xestiascan_error</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.4 xestiascan_error</span>
+<br><br>
+xestiascan_error processes errors that occur within Xestia Scanner Server.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_error(errortype, errorext);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+xestiascan_error(“generic”);<br>
+xestiascan_error(“databaseerror”, “Extended Error Information”);
+</div>
+<br><br>
+<i>errortype</i><br>
+Specifies the error message to return. If the errortype returned is blank then the generic error type is used. This is required each time when the subroutine is called.
+<br><br>
+For more information about the error message used, look at the xestiascan_error subroutine in the Xestia Scanner Server source code and the language file where each error type should match with the error type given in the language file.
+<br><br>
+<i>errorext</i><br>
+Specifies the extended error information.
+		</div>
+	</body>
+</html>

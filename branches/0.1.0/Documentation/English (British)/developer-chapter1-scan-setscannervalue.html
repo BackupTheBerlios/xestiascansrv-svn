@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<link href="style.css" REL="stylesheet" TYPE="text/css" MEDIA="screen">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Xestia Scanner Server Documentation - Developer Documentation - 1.23 xestiascan_scan_setscannervalue</title>
+	</head>
+	<body>
+		<div class="menubarback">
+			<div class="menubar">
+				<span class="apptitle">Xestia Scanner Server</span>
+				<a href="index.html">Index</a> | <a href="user.html">User 
+Documentation</a> | <a href="tutorial.html">Tutorial Documentation</a> | 
+<a href="developer.html">Developer Documentation</a>
+			</div>
+		</div>
+		<div class="pageinformation">
+			<span class="pagetitle">1.23 xestiascan_scan_setscannervalue</span>
+<br><br>
+xestiascan_scan_setscannervalue gets a value based on a specific name from the selected scanner.
+<br><br>
+<b>Parameters:</b>
+<br><br>
+<div class="code">
+xestiascan_scan_setscannervalue(name, value);
+</div>
+<br><br>
+<b>Usage:</b>
+<br><br>
+<div class="code">
+xestiascan_scan_setscannervalue(SANE_NAME_SCAN_RESOLUTION, “50”);
+</div>
+<br><br>
+<i>name</i><br>
+Gets the value associated with the name. The names used are macros as used by the SANE API.
+<br><br>
+<i>value</i><br>
+Sets the selected name with the given value.
+<br><br>
+Any errors that did occur whilst setting the value can be checked using $Sane::STATUS. A null/empty value indicates that the operation completed successfully while a value indicates that the operation was not completed successfully.
+		</div>
+	</body>
+</html>

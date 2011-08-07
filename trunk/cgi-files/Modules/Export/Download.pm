@@ -155,6 +155,10 @@ sub exportimage{
 		$processed_filename_nopath = $processedexportname;
 
 		
+	} else {
+	
+		move("scans/" . $processed_filename_nopath, $scans_fs . "/" . $processed_filename_nopath) or ($error_flag = 1, $error_message = $!, return);
+		
 	}
 	
 	# Print Link.

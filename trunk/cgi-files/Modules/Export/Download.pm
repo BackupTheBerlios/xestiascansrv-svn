@@ -141,7 +141,7 @@ sub exportimage{
 	
 	my $processed_filename_nopath = fileparse($processed_filename);
 	
-	copy($processed_filename, $scans_fs . "/scans/" . $processed_filename_nopath) or ($error_flag = 1, $error_message = $!, return);
+	copy($processed_filename, "scans/" . $processed_filename_nopath) or ($error_flag = 1, $error_message = $!, return);
 	
 	# Move the file into the scans folder.
 	
@@ -151,7 +151,7 @@ sub exportimage{
 		
 		my $processedexportname = basename($exportoptions{filenameforexport});
 		
-		move($scans_fs . "/scans/" . $processed_filename_nopath, $scans_fs . "/" . $processedexportname) or ($error_flag = 1, $error_message = $!, return);
+		move("scans/" . $processed_filename_nopath, $scans_fs . "/" . $processedexportname) or ($error_flag = 1, $error_message = $!, return);
 		$processed_filename_nopath = $processedexportname;
 
 		

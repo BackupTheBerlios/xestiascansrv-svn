@@ -1048,6 +1048,18 @@ sub edituser{
 		
 	}
 	
+	if (!$data{"Enabled"}){
+	
+		$data{"Enabled"} = "off";
+		
+	}
+	
+	if (!$data{"Admin"}){
+
+		$data{"Admin"} = "off";
+		
+	}
+	
 	# Check if the username exists.
 	
 	my $sqlquery = "";
